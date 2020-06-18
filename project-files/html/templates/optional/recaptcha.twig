@@ -1,0 +1,5 @@
+<meta name="recaptchaKey" content="{{ site.recaptchaPublishableKey }}" />
+
+{% if site.recaptchaPublishableKey is not empty %}
+    <script src="https://www.google.com/recaptcha/api.js?render={{ site.recaptchaPublishableKey }}"></script>
+{% endif %}
