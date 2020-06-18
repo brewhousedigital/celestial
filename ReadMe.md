@@ -4,3 +4,15 @@ An easy to use boilerplate for web projects. It has all of the routing, api, jav
 Visit the documentation site:
 
 https://www.celestial.dev
+
+
+---
+
+
+## Libraries powering Celestial:
+
+Shoutout to these great developers:
+
+- [delight.im](https://github.com/delight-im)
+- [Twig, Symfony](https://github.com/twigphp)
+- [Lee Munroe](https://github.com/leemunroe)
