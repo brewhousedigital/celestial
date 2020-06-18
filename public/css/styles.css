@@ -26,3 +26,7 @@ a {
 nav, main, footer {
     margin-bottom: 60px;
 }
+
+label {
+    display: block;
+}
