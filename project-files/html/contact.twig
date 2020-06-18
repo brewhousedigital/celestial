@@ -1,0 +1,28 @@
+<div class="container py-5">
+    <p><a href="/about/">About - Test Link</a> | <a href="/contact/">Contact - Test Link</a></p>
+
+    <h1>Contact Form</h1>
+    {{ startForm("/api/contact-form/", "post", "contactForm") }}
+    <div class="form-group">
+        <label for="formName">Name</label>
+        <input type="text" class="form-control" id="formName" name="name">
+    </div><!-- end form group -->
+
+    <div class="form-group">
+        <label for="formEmail">Email</label>
+        <input type="text" class="form-control" id="formEmail" name="email">
+    </div><!-- end form group -->
+
+    <div class="form-group">
+        <label for="formMessage">Brief description of what you need</label>
+        <textarea class="form-control" id="formMessage" rows="4" name="message"></textarea>
+    </div><!-- end form group -->
+
+    <input type="hidden" name="request" value="contact-form">
+    <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
+
+    <div class="form-group">
+        {{ submitFormButton("Send", "btn btn-primary btn-lg") }}
+    </div><!-- end form group -->
+    {{ endForm() }}
+</div>
